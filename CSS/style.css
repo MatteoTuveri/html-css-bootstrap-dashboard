@@ -6,9 +6,26 @@
 
 }
 
+
+
 .debug{
-    border:1px solid none;
+    border:1px solid black;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
 
 .wrapper{
     width: 100vw;
@@ -21,12 +38,12 @@ img{
 }
 
 #navigation{
-    width: 100vw;
+    width: 100%;
 }
 
 header{
     height: 100px;
-    width: 100%;
+    width: calc(100% - 10px);
 }
 
 .logo{
@@ -61,16 +78,23 @@ main{
 
 #main-content{
     width: calc(100vw - 70px);
-    height: calc(100vh - 100px);
+    overflow-y: scroll;
 }
 
 #main-nav{
     display: block;
     background-color: var(--first-bg-color);
-    width: calc(100vw - 70px);
+    width: 100%;
 
 }
 
 .my-text-bg-primary{
     background-color: rgb(22, 91, 186);
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
 }
