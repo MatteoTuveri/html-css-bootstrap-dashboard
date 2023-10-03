@@ -1,98 +1,108 @@
-:root{
-    --first-bg-color:rgb(27, 114, 232);
-    --second-bg-color:rgb(5, 30, 52);
-    --search-color:rgb(229, 229, 229);
-    --contrast-color:rgb(255, 143, 0);
+:root {
+    --first-bg-color: rgb(27, 114, 232);
+    --second-bg-color: rgb(5, 30, 52);
+    --search-color: rgb(229, 229, 229);
+    --contrast-color: rgb(255, 143, 0);
 
 }
 
 
 
-.debug{
-    border:1px solid black;
+.debug {
+    border: 1px solid none;
 }
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
+}
 
-.wrapper{
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.wrapper {
     width: 100vw;
     height: 100vh;
 }
 
-img{
+img {
     display: block;
     width: 100%;
 }
 
-#navigation{
+#navigation {
     width: 100%;
 }
 
-header{
+header {
     height: 100px;
     width: calc(100% - 10px);
 }
 
-.logo{
-    min-width: 60px;
+.logo {
+    min-width: 50px;
 }
 
-.cube{
+.cube {
     width: 25px;
     height: 25px;
     text-align: center;
 }
 
-.text-contrast{
+.text-contrast {
     color: var(--contrast-color);
 }
 
-main{
+main {
     width: 100%;
     height: calc(100vh - 100px);
 }
 
-#small-side-bar{
+#small-side-bar {
     background-color: var(--second-bg-color);
     background-image: url(../img/sidebar-bg.png);
     width: 70px;
     height: 100%;
 }
 
-#small-side-bar a{
+.icon-hover:hover::after {
+    content: ' ';
+    position: absolute;
+    background-color: rgb(255, 255, 255, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#small-side-bar a {
     font-size: 1.5em;
 }
 
-#main-content{
+#main-content {
     width: calc(100vw - 70px);
     overflow-y: scroll;
 }
 
-#main-nav{
+#main-nav {
     display: block;
     background-color: var(--first-bg-color);
     width: 100%;
 
 }
 
-.my-text-bg-primary{
+.my-text-bg-primary {
     background-color: rgb(22, 91, 186);
 }
 
-.icon{
+.icon {
     width: 25px;
     height: 25px;
     border-radius: 50%;

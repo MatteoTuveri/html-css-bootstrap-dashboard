@@ -50,7 +50,7 @@
                     class="debug d-flex align-items-center col-2 col-sm-1 col-lg-2 col-xl-2 col-xxl-1 justify-content-end justify-content-lg-between">
                     <!--*OPTIONS*-->
 
-                    <a href="#" class="debug d-none d-lg-block text-black px-1">
+                    <a href="#" class="debug d-none d-lg-block text-black px-1 ">
                         <i class="fa-solid fa-list"></i>
                     </a>
                     <a href="#" class="debug cube d-none d-lg-block text-white bg-black border rounded-circle">
@@ -59,9 +59,17 @@
                     <a href="#" class="debug d-none d-lg-block text-black px-1">
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </a>
-                    <a href="#" class="debug text- px-1 text-contrast">
-                        <i class="fa-solid fa-bell"></i>
-                    </a>
+                    <div class="dropdown">
+                        <button class="btn debug text- px-1 text-contrast" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
 
                 </div>
 
@@ -73,25 +81,25 @@
 
             <div id="small-side-bar" class="debug d-flex flex-column justify-content-between"><!--*SMALL-SIDE-BAR*-->
 
-                <div class="debug d-flex flex-column align-items-center"><!--**UP-SMALL-SIDE-BAR**-->
+                <div class="debug d-flex flex-column text-center"><!--**UP-SMALL-SIDE-BAR**-->
 
-                    <a href="#" class="debug text-white py-2">
+                    <a href="#" class="debug text-white py-2 position-relative icon-hover">
                         <i class="fa-solid fa-house"></i>
                     </a>
 
-                    <a href="#" class="debug text-white py-2">
+                    <a href="#" class="debug text-white py-2 position-relative icon-hover">
                         <i class="fa-solid fa-chart-simple"></i>
                     </a>
 
-                    <a href="#" class="debug text-white py-2">
+                    <a href="#" class="debug text-white py-2 position-relative icon-hover">
                         <i class="fa-solid fa-signal"></i>
                     </a>
 
                 </div>
 
-                <div class="debug d-flex flex-column align-items-center py-2"><!--**DOWN-SMALL-SIDE-BAR**-->
+                <div class="debug d-flex flex-column text-center py-2"><!--**DOWN-SMALL-SIDE-BAR**-->
 
-                    <a href="#" class="debug text-white py-2">
+                    <a href="#" class="debug text-white py-2 position-relative icon-hover">
                         <i class="fa-solid fa-gear"></i>
                     </a>
 
@@ -118,10 +126,22 @@
                         <div class=" debug col px-3 py-3 d-flex justify-content-md-center align-items-start">
                             <div class="debug d-flex align-items-center">
 
-                                <span class="debug">Nuovo Studente</span>
-                                <button type="button" class="btn btn-outline-light">
+                                <span class="debug px-2">Nuovo Studente</span>
+                                <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        ...
+                                    </div>
+                                </div>
 
                             </div>
 
