@@ -40,6 +40,10 @@ img {
 #navigation {
     width: 100%;
 }
+#navigation .cube {
+    width: 25px;
+    height: 25px;
+}
 
 header {
     height: 100px;
@@ -48,11 +52,12 @@ header {
 
 .logo {
     min-width: 50px;
+    max-width: 70px;
 }
 
 .cube {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     text-align: center;
 }
 
@@ -65,10 +70,9 @@ main {
     height: calc(100vh - 100px);
 }
 
-#small-side-bar {
+#side-bar {
     background-color: var(--second-bg-color);
     background-image: url(../img/sidebar-bg.png);
-    width: 70px;
     height: 100%;
 }
 
@@ -82,13 +86,21 @@ main {
     height: 100%;
 }
 
-#small-side-bar a {
-    font-size: 1.5em;
+#side-bar a {
+    font-size: 1.2em;
+}
+
+.side-bar-icon{
+    width: 30px;
+    margin-right: 2px;
 }
 
 #main-content {
-    width: calc(100vw - 70px);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     overflow-y: scroll;
+    background-color: rgb(248, 249, 250);
 }
 
 #main-nav {
@@ -102,9 +114,20 @@ main {
     background-color: rgb(22, 91, 186);
 }
 
+.icon-size{
+    width: 5%;
+    max-width: 300px;
+    min-width: 15px;
+}
 .icon {
-    width: 25px;
-    height: 25px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+@media  screen and (max-width:576px) {
+
+    .table-none {
+        display:none;
+    }
+
 }
